@@ -83,12 +83,6 @@ class Server {
   private setupMiddleware(): void {
     // Security middleware
     this.app.use(helmet());
-    
-    // CORS configuration
-    this.app.use(cors({
-      origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-      credentials: true,
-    }));
 
     // Body parsing
     this.app.use(express.json());
@@ -96,6 +90,7 @@ class Server {
 
     // Trust proxy for rate limiting (if behind reverse proxy)
     this.app.set('trust proxy', 1);
+    this.app.use(cors())
   }
 
   private setupRoutes(): void {
