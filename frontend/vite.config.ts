@@ -7,8 +7,9 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'https://apni-sec-production.up.railway.app',
         changeOrigin: true,
+        secure: true
       },
     },
   },

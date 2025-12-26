@@ -27,11 +27,11 @@ class Database {
     }
 
     const dbConfig = {
-      host: process.env.MYSQLHOST || process.env.DB_HOST || 'localhost' ,
-      port: process.env.MYSQLPORT||  parseInt(process.env.DB_PORT || '3306') ,
-      user: process.env.MYSQLUSER||process.env.DB_USER || 'root',
-      password: process.env.MYSQLPASSWORD || dbPassword || '' ,
-      database: process.env.MYSQLDATABASE || process.env.DB_NAME || 'apnisec_db',
+      host: process.env.MYSQLHOST,
+      port: process.env.MYSQLPORT,
+      user: process.env.MYSQLUSER,
+      password: process.env.MYSQLPASSWORD,
+      database: process.env.MYSQLDATABASE,
       waitForConnections: true,
       connectionLimit: 10,
       queueLimit: 0,
