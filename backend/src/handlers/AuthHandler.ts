@@ -14,6 +14,7 @@ class AuthHandler {
   async register(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       const { email, password } = req.body;
+      console.log("Received the register request")
       const result = await authService.register(email, password);
 
       const response: ApiResponse = {
@@ -24,6 +25,7 @@ class AuthHandler {
 
       res.status(201).json(response);
     } catch (error) {
+      console.log("Error while creating new user: " + error)
       next(error);
     }
   }
@@ -41,6 +43,7 @@ class AuthHandler {
 
       res.status(200).json(response);
     } catch (error) {
+      console.log("Error while login user: " + error)
       next(error);
     }
   }
