@@ -216,12 +216,7 @@ export default function ProfilePage() {
                 >
                   {saving ? 'Saving...' : 'Save Changes'}
                 </button>
-                <a
-                  href="/dashboard"
-                  className="bg-gray-200 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-300 transition-colors font-medium text-center"
-                >
-                  Back to Dashboard
-                </a>
+              
               </div>
             </form>
           </div>
