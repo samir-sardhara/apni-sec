@@ -30,6 +30,7 @@ export default function LoginPage() {
       const response = await authService.login(email, password);
       localStorage.setItem('token', response.token);
       localStorage.setItem('user', JSON.stringify(response.user));
+     
       navigate('/dashboard');
     } catch (err: any) {
       setError(err.response?.data?.error || 'Login failed. Please try again.');

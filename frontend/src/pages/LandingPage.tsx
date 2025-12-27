@@ -19,18 +19,7 @@ export default function LandingPage() {
               Trusted by organizations worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/register"
-                className="bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl"
-              >
-                Get Started Free
-              </Link>
-              <Link
-                to="/#services"
-                className="bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-primary-600 hover:bg-primary-50 transition-colors"
-              >
-                Learn More
-              </Link>
+             
             </div>
           </div>
         </div>
@@ -209,12 +198,7 @@ export default function LandingPage() {
               <p className="text-lg mb-6 opacity-90">
                 Join hundreds of organizations that trust ApniSec for their cybersecurity needs.
               </p>
-              <Link
-                to="/register"
-                className="inline-block bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Create Free Account
-              </Link>
+              
             </div>
           </div>
         </div>
@@ -251,13 +235,7 @@ export default function LandingPage() {
                 <li>Privacy Policy</li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Email: info@apnisec.com</li>
-                <li>Phone: +1 (555) 123-4567</li>
-              </ul>
-            </div>
+           
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; {new Date().getFullYear()} ApniSec. All rights reserved.</p>

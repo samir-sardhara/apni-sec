@@ -86,20 +86,7 @@ export default function Navbar() {
             >
               Home
             </Link>
-            <Link
-              to="/#services"
-              className="block px-4 py-2 text-gray-700 hover:bg-primary-50 rounded"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link
-              to="/#about"
-              className="block px-4 py-2 text-gray-700 hover:bg-primary-50 rounded"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </Link>
+            
             {isAuthenticated ? (
               <>
                 <Link
